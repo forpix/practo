@@ -2,7 +2,7 @@
 
 pwd
 
-echo '========= Lets Create the gcts folder =========='
+echo ' <===> Lets Create the gcts folder  <===> '
 
 cd /usr/sap/QE1/D00/test
 
@@ -23,6 +23,12 @@ chmod  777 def/
 cd /usr/sap/QE1/D00/test/def
 
 pwd
+
+echo '======= ======== ========'
+
+java -version
+
+echo 'script is successfull executed '
 
 ls -a
 
