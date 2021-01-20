@@ -10,6 +10,8 @@ mkdir abc
 
 chmod 777 abc
 
+ls -a
+
 echo ' <===> Java Machine installation <===> '
 
 cd /usr/sap/QE1/D00/test/
@@ -20,7 +22,9 @@ chmod  777 def/
 
 cd /usr/sap/QE1/D00/test/def
 
-pwd; ll 
+pwd
+
+ls -a
 
 
 
