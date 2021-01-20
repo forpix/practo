@@ -12,7 +12,9 @@ chmod 777 gcts
 
 ls -a
 
-echo ' <===================> Java Machine installation <==========================> '
+java -version
+
+echo ' <======================> Java Machine installation <==========================> '
 
 cd /usr/sap/QE1/D00/
 
