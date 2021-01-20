@@ -2,7 +2,7 @@
 
 pwd
 
-echo ' <==================> Creating the gcts workspace folder  <======================> '
+echo ' Creating the gcts workspace folder  '
 
 cd /usr/sap/QE1/D00/
 
@@ -18,7 +18,9 @@ java -version
 
 echo '==================================== +++++++++ =========== +++++++++ ================================='
 
-echo ' <================================> Java Machine installation <======================================> '
+echo ' '
+
+echo ' Java Machine installation  '
 
 cd /usr/sap/QE1/D00/
 
