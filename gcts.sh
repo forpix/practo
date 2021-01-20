@@ -6,19 +6,19 @@ echo '========= Let's Create the gcts folder =========='
 
 cd /usr/sap/QE1/D00/
 
-mkdir gcts
+mkdir abc
 
-chmod 777 gcts
+chmod 777 abc
 
 echo ' <===> Java Machine installation <===> '
 
 cd /usr/sap/QE1/D00
 
-mkdir sapmachine
+mkdir def
 
-chmod  777 sapmachine/
+chmod  777 def/
 
-cd /usr/sap/QE1/D00/sapmachine
+cd /usr/sap/QE1/D00/def
 
 pwd; ll 
 
