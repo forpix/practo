@@ -30,6 +30,8 @@ java -version
 
 echo 'script is successfull executed '
 
+cd /usr/sap/QE1/D00/test/
+
 ls -a
 
 
