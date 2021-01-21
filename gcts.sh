@@ -17,6 +17,8 @@ fi
 
 echo ' Creating the gcts workspace folder  '
 
+echo '  '
+
 cd /usr/sap/QE1/D00/
 
 mkdir gcts
@@ -31,9 +33,11 @@ java -version
 
 echo '==================================== +++++++++ =========== +++++++++ ================================='
 
-echo ' '
+echo '  '
 
 echo ' Java Machine installation  '
+
+echo '  '
 
 cd /usr/sap/QE1/D00/
 
