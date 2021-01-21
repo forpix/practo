@@ -2,6 +2,16 @@
 
 pwd
 
+if [ -d "usr/sap/QE1/D00" ] 
+then
+    echo "Directory exists." 
+else
+    echo "Directory does not exists, creating Directory"
+    mkdir D00
+    chmod 777 D00
+    ls -a
+fi
+
 echo ' Creating the gcts workspace folder  '
 
 cd /usr/sap/QE1/D00/
@@ -26,9 +36,9 @@ cd /usr/sap/QE1/D00/
 
 mkdir sapmachine
 
-chmod  777 sapmachine/
+chmod  777 sapmachine
 
-cd /usr/sap/QE1/D00/sapmachine
+cd /usr/sap/QE1/D00/sapmachine/
 
 pwd
 
