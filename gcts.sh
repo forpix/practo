@@ -7,6 +7,7 @@ then
     echo "Directory exists." 
 else
     echo "Directory does not exists, creating Directory"
+    cd /usr/sap/QE1/
     mkdir D00
     chmod 777 D00
     ls -a
@@ -58,6 +59,6 @@ echo '==================================== +++++++++ =========== +++++++++ =====
 
 ls -a
 
-echo 'script is successfull executed '
+echo 'script is successfully executed '
 
 
