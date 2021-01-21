@@ -2,11 +2,13 @@
 
 pwd
 
-if [ -d "usr/sap/QE1/D00" ] 
+DIR="/usr/sap/QE1/D00"
+
+if [ -d "$DIR" ] 
 then
-    echo "Directory exists." 
+    echo " '$DIR' exists." 
 else
-    echo "Directory does not exists, creating Directory"
+    echo " '$DIR' does not exists, creating Directory"
     cd /usr/sap/QE1/
     mkdir D00
     chmod 777 D00
