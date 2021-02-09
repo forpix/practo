@@ -31,7 +31,7 @@ echo 'checking the present Java Version'
 
 echo '=========================================================================================='
 
-JAVA_VERSION=`java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }'
+JAVA_VERSION='java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }''
 
 echo $JAVA_VERSION
 
@@ -65,7 +65,7 @@ echo ' checking the updated Java Version '
 
 echo '============================================================================================='
 
-JAVA_VERSION=`java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }'`
+JAVA_VERSION='java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }''
 
 echo $JAVA_VERSION
 
@@ -74,3 +74,5 @@ echo '==========================================================================
 ls -a
 
 echo  "\033[0;36m script is successfully executed"
+
+echo 'script is successfully executed '
