@@ -33,6 +33,8 @@ echo '==========================================================================
 
 a=$(java -version 2>&1 >/dev/null) ; set -- $a ;  echo $3
 
+echo  -e "updating the Java\n"
+
 echo '=========================================================================================='
 
 echo '  '
@@ -69,6 +71,4 @@ echo '==========================================================================
 
 ls -a
 
-echo  "\033[0;36m script is successfully executed"
-
-echo 'script is successfully executed '
+echo "$(tput setaf 2)=============== script executed successfully ================="
