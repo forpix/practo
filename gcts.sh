@@ -27,7 +27,7 @@ chmod 777 gcts
 
 ls -a
 
-echo 'checking the present Java Version'
+echo  -e 'checking the present Java Version\n"'
 
 echo '=========================================================================================='
 
@@ -59,13 +59,11 @@ curl -L -O https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.4
 
 zypper -n --no-gpg-checks install ./sapmachine-jdk-11.0.4-1.x86_64.rpm
 
-echo ' checking the updated Java Version '
+echo  -e ' checking the updated Java Version \n'
 
 echo '============================================================================================='
 
-JAVA_VERSION='java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }''
-
-echo $JAVA_VERSION
+b=$(java -version 2>&1 >/dev/null) ; set -- $b ;  echo $3
 
 echo '============================================================================================='
 
