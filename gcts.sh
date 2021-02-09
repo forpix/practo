@@ -31,9 +31,7 @@ echo 'checking the present Java Version'
 
 echo '=========================================================================================='
 
-JAVA_VERSION='java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }''
-
-echo $JAVA_VERSION
+a=$(java -version 2>&1 >/dev/null) ; set -- $a ;  echo $3
 
 echo '=========================================================================================='
 
