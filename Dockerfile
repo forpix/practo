@@ -17,7 +17,7 @@ RUN curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&sou
 RUN curl --insecure https://github.wdf.sap.corp/api/v3/repos/orca/cflocal-plugin/releases/latest \
   | grep browser_download_url \
   | grep linux-amd64 \
-  | cut -d '"' -f 4 \
+  | cut -d '" "' -f 4 \
   | xargs wget --no-check-certificate
 
 RUN cf --version
