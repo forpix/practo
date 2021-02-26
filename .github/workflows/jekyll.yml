@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: mdali-cf-cli
+    - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: mdaali/sap_cf
@@ -14,4 +14,4 @@ jobs:
         registry: docker.pkg.github.com
         snapshot: true
         buildargs: MY_FIRST
-        tags: mdaali/sap_cf/ali
+        tag_names: true
