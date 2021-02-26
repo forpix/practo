@@ -11,7 +11,8 @@ RUN mkdir cf-cli
 WORKDIR /cf-cli
 
 # Download latest CF CLI
-RUN curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&source=github" | tar -zx
+RUN curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
+RUN mv cf /usr/local/bin
 
 RUN cf --version
 RUN cf plugin
