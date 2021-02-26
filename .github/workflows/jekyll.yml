@@ -14,4 +14,4 @@ jobs:
         registry: docker.pkg.github.com
         snapshot: true
         buildargs: MY_FIRST
-        tags: mdaali/sap_cf
+        tags: mdaali/sap_cf/ali
