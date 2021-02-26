@@ -15,4 +15,3 @@ RUN curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=git
 RUN mv cf /usr/local/bin
 
 RUN cf --version
-RUN cf plugin
