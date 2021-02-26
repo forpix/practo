@@ -14,4 +14,4 @@ jobs:
         registry: docker.pkg.github.com
         snapshot: true
         buildargs: MY_FIRST
-        tags: "latest"
+        tags: mdaali/sap_cf/cf_cli_alpine
